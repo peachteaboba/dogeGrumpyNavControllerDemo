@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  GrumpyViewController.swift
 //  NavViewControllerBasics
 //
 //  Created by Andy Feng on 12/5/16.
@@ -8,24 +8,20 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class GrumpyViewController: UIViewController {
     
     
-    @IBAction func handleViewGrumpyPressed(_ sender: UIButton) {
-        
-        // Step 1: load up an instance of the destination VC
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "GrumpyVC")
-        
-        // Step 2: Make the transition
-        self.navigationController?.pushViewController(vc!, animated: true)
+    
+    @IBAction func goHome(_ sender: UIButton) {
+        self.navigationController?.popToRootViewController(animated: false)
         
         
     }
     
-
     
     
+    
+    @IBOutlet weak var imageView: UIImageView!
     
     
     
@@ -34,13 +30,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        self.imageView.image = UIImage(named: "grump")
+        
+        
+        
+        
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
+
 
