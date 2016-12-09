@@ -10,6 +10,7 @@ import UIKit
 
 class GrumpyViewController: UIViewController {
     
+    var myName:String = ""
     
     
     @IBAction func goHome(_ sender: UIButton) {
@@ -34,7 +35,7 @@ class GrumpyViewController: UIViewController {
         
         self.imageView.image = UIImage(named: "grump")
         
-        
+        print(self.myName)
         
         
         

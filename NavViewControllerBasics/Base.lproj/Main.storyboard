@@ -51,6 +51,30 @@
                                     <action selector="handleViewGrumpyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9RG-uX-XCs"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKB-ZB-hSw">
+                                <rect key="frame" x="16" y="409" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="9Yp-Ng-TzS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Visit Cat"/>
+                                <connections>
+                                    <action selector="handleViewGrumpyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gVe-YI-c4M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffm-bC-e5G">
+                                <rect key="frame" x="16" y="479" width="343" height="50"/>
+                                <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="EPx-mz-PYh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <state key="normal" title="Visit Cat 2"/>
+                                <connections>
+                                    <action selector="handleViewGrumpyPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d1C-8N-wPB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -58,8 +82,14 @@
                             <constraint firstItem="qWL-ky-NXk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="C3c-kw-Npn"/>
                             <constraint firstItem="qI2-Kc-rIs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Ctc-WP-LM2"/>
                             <constraint firstItem="qWL-ky-NXk" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="OJO-76-wB6"/>
+                            <constraint firstItem="ffm-bC-e5G" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WwU-cm-R4c"/>
+                            <constraint firstItem="FKB-ZB-hSw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XMA-cO-Nz8"/>
                             <constraint firstItem="qWL-ky-NXk" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="bBv-rh-B2K"/>
+                            <constraint firstItem="ffm-bC-e5G" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ba6-k7-OzM"/>
                             <constraint firstItem="qI2-Kc-rIs" firstAttribute="top" secondItem="qWL-ky-NXk" secondAttribute="bottom" constant="25" id="gYS-Lf-wwS"/>
+                            <constraint firstItem="FKB-ZB-hSw" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="kcH-Or-VGr"/>
+                            <constraint firstItem="FKB-ZB-hSw" firstAttribute="top" secondItem="qI2-Kc-rIs" secondAttribute="bottom" constant="25" id="qW6-4y-Yex"/>
+                            <constraint firstItem="ffm-bC-e5G" firstAttribute="top" secondItem="FKB-ZB-hSw" secondAttribute="bottom" constant="20" id="rpT-QL-DZw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Root VC" id="WbH-9H-8ca"/>
